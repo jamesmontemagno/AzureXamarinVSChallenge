@@ -88,7 +88,7 @@ For more on scripts and data in Mobile Services, see [this tutorial](http://www.
 
 ![image](images/mobile-identity-tab.png)
 
-* Back in Xcode, open the TodoService project file and add the following variables:
+* Back in Visual Studio, open the TodoService project file and add the following variables:
 
 ```
 // Mobile Service logged in user
