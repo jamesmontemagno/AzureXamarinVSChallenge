@@ -10,7 +10,7 @@ In this challenge, you will use Windows Azure Mobile Services & Xamarin to build
 
 You'll login to the Windows Azure portal, create a new Mobile Service and SQL database.  Then, you'll download the sample ToDo list app and have some fun storing data in the cloud, configuring Facebook authentication, and sending push notifications.
 
-The walkthrough below should help you with the challenge, but you can also get in touch with @JamesMontemagno and @ChrisNTR at the booth or @PaulBatum via Twitter with any questions!
+The walkthrough below should help you with the challenge, but you can also get in touch with [@JamesMontemagno](http://twitter.com/JamesMontemagno) and [@ChrisNTR](http://twitter.com/ChrisNTR) at the booth or [@PaulBatum](http://twitter.com/PaulBatum) via Twitter with any questions!
 
 ####Bonus Challenge
 For bonus points--obtain a free SendGrid account from the Windows Azure Store and send an email from scheduled scripts. Completing the bonus challenge will get you another entry in the Big Jambox raffle.
@@ -70,98 +70,7 @@ function insert(item, user, request) {
 
 For more on scripts and data in Mobile Services, see [this tutorial](http://www.windowsazure.com/en-us/develop/mobile/tutorials/authorize-users-in-scripts-xamarin-ios/). 
 
-####User Authentication
-
-* The next step is to get set up with Facebook authentication and limit access to authenticated users.  
-
-* In the Management Portal, click the Data tab, and then click the TodoItem table.
-
-![image](images/mobile-portal-data-tables.png)
-
-* Click the Permissions tab, set all permissions to 'Only Authenticated Users,' and then click Save. This will ensure that all operations against the TodoItem table require an authenticated user. This also simplifies the scripts in the next tutorial because they will not have to allow for the possibility of anonymous users.
-
-![image](images/mobile-portal-change-table-perms.png)
-
-* Follow the steps on [this page](http://www.windowsazure.com/en-us/develop/mobile/how-to-guides/register-for-facebook-authentication/) to register your app for Facebook authentication with Mobile Services.
-
-* Copy over your App Key and Secret from Facebook into the appropriate slots in the 'IDENTITY' tab. Hit 'Save.'
-
-![image](images/mobile-identity-tab.png)
-
-* Back in Visual Studio, open the TodoService project file and add the following variables:
-
-```
-// Mobile Service logged in user
-private MobileServiceUser user;
-public MobileServiceUser User { get { return user; } }
-```
-
-* Add the following method to TodoService:
-
-```
-private async Task Authenticate(UIViewController view)
-{
-    try
-    {
-        user = await client.LoginAsync(view, MobileServiceAuthenticationProvider.Facebook);
-    }
-    catch (Exception ex)
-    {
-        Console.Error.WriteLine (@"ERROR - AUTHENTICATION FAILED {0}", ex.Message);
-    }
-}
-
-```
-
-* Move the request for the TodoItem table from TodoService into a new method called CreateTable: 
-
-```
-private async Task CreateTable()
-{
-    // Create an MSTable instance to allow us to work with the TodoItem table
-    todoTable = client.GetTable<TodoItem>();
-}
-```
-
-* Create a new asynchronous public method called LoginAndGetData
-
-```
-public async Task LoginAndGetData(UIViewController view)
-{
-    await Authenticate(view);
-    await CreateTable();
-}
-```
-
-* In the TodoListViewController, override  the ViewDidAppear method and define it as: 
-```
-public override async void ViewDidAppear(bool animated)
-{
-    base.ViewDidAppear(animated);
-
-
-if (TodoService.DefaultService.User == null)
-{
-    await TodoService.DefaultService.LoginAndGetData(this);
-}
-
-
-if (TodoService.DefaultService.User == null)
-{
-    // TODO:: show error
-    return;
-} 
-
-
-RefreshAsync();
-
-
-}
-```
-
-* Remove the original call to RefreshAsync from TodoListViewController.ViewDidLoad and hit Run to build the project. You'll be presented with the Facebook login screen.
-
-#####Bonus Challenge #1 Walkthrough
+#####Bonus Challenge Walkthrough
 
 * The Windows Azure Store contains services and data sets that can be useful in your app.
 
