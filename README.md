@@ -4,7 +4,7 @@
 
 Integration with VS2013 makes it remarkably easy to get started building connected iOS and Android apps in C# with Xamarin and Azure Mobile Services.  
 
-In this challenge, you will use Windows Azure Mobile Services & Xamarin to build a an iOS app in C#. The best part is that you'll be able to reuse most of this code in an Android app later. 
+In this challenge, you will use Windows Azure Mobile Services & Xamarin to build an iOS app in C#. The best part is that you'll be able to reuse most of this code in an Android app later. 
 
 <b>Once you complete the challenge, swing by the Xamarin booth to pick up your t-shirt and enter into a raffle for a Jawbone Big Jambox.  We're giving one out at every stop.</b>
 
