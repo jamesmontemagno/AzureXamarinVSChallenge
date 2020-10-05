@@ -46,7 +46,7 @@ Everyone who completes the challenge earns the Mobile Services t-shirt below and
 
 ![image](images/mobile-entered-items.png)
 
-* If you head back to the [Windows Azure Portal](manage.windowsazure.com), you'll see that items that you added to the list are now stored in the TodoItem table in your SQL database.
+* If you head back to the [Windows Azure Portal](https://manage.windowsazure.com/?WT.mc_id=azurexamarinvschallenge-github-jamont), you'll see that items that you added to the list are now stored in the TodoItem table in your SQL database.
 
 ![image](images/mobile-items-added.png)
 
@@ -68,7 +68,7 @@ function insert(item, user, request) {
 
 * Here, we've walked through using a SQL database with your Mobile Service, but some apps need to store unstructured binary or typed data. Using scripts, you could easily connect to Windows Azure Blob or Table Storage (as well as many other third party data options). 
 
-For more on scripts and data in Mobile Services, see [this tutorial](http://www.windowsazure.com/en-us/develop/mobile/tutorials/authorize-users-in-scripts-xamarin-ios/). 
+For more on scripts and data in Mobile Services, see [this tutorial](https://www.windowsazure.com/develop/mobile/tutorials/authorize-users-in-scripts-xamarin-ios/?WT.mc_id=azurexamarinvschallenge-github-jamont). 
 
 #####Bonus Challenge Walkthrough
 
@@ -118,11 +118,11 @@ function sendEmail(item) {
 ###Resources:
 
 * Xamarin.Android Getting Started Content: 
-http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-xamarin-android
-* Xamarin.iOS Getting Started with Push: http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-push-xamarin-ios
-* Xamarin.Android Getting Started with Push: http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-push-xamarin-android
-* Mobile Dev Center: www.windowsazure.com/mobile
+https://www.windowsazure.com/develop/mobile/tutorials/get-started-xamarin-android?WT.mc_id=azurexamarinvschallenge-github-jamont
+* Xamarin.iOS Getting Started with Push: https://www.windowsazure.com/develop/mobile/tutorials/get-started-with-push-xamarin-ios?WT.mc_id=azurexamarinvschallenge-github-jamont
+* Xamarin.Android Getting Started with Push: https://www.windowsazure.com/develop/mobile/tutorials/get-started-with-push-xamarin-android?WT.mc_id=azurexamarinvschallenge-github-jamont
+* Mobile Dev Center: https://www.windowsazure.com/mobile?WT.mc_id=azurexamarinvschallenge-github-jamont
 * Collection of helpful blog posts & tutorials: aka.ms/CommonWAMS
-* Forum: http://social.msdn.microsoft.com/Forums/en-US/azuremobile/threads
+* Forum: https://social.msdn.microsoft.com/Forums/en-US/azuremobile/threads?WT.mc_id=azurexamarinvschallenge-github-jamont
 * Feature Requests: mobileservices.uservoice.com
 * Feedback: mobileservices (at) microsoft (dot) com
