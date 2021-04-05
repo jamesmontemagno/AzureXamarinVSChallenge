@@ -27,8 +27,8 @@ Everyone who completes the challenge earns the Mobile Services t-shirt below and
 
 ####Data
 
-* To get started,either sign up for the [30-day free trial](http://www.windowsazure.com/en-us/pricing/free-trial/?WT.mc_id=azurebg_us_pmm_mirluna_azureorl) or [login to your existing Windows Azure account](http://www.windowsazure.com/en-us/pricing/free-trial/?WT.mc_id=azurebg_us_pmm_mirluna_azureorl).  
-<b>If you're an MSDN subscriber, you can receive up to $150 in Azure credits each month--claim those [here](http://www.windowsazure.com/en-us/pricing/free-trial/?WT.mc_id=azurebg_us_pmm_mirluna_azureorl).</b>
+* To get started,either sign up for the [30-day free trial](https://www.windowsazure.com/pricing/free-trial/?WT.mc_id=friends-0000-jamont) or [login to your existing Windows Azure account](https://www.windowsazure.com/pricing/free-trial/?WT.mc_id=friends-0000-jamont).  
+<b>If you're an MSDN subscriber, you can receive up to $150 in Azure credits each month--claim those [here](https://www.windowsazure.com/pricing/free-trial/?WT.mc_id=friends-0000-jamont).</b>
 
 * Click New --> Compute --> Mobile Service --> Create.  Then specify URL and database login/password order to create a new Mobile Service and the associated SQL database.
 
@@ -68,7 +68,7 @@ function insert(item, user, request) {
 
 * Here, we've walked through using a SQL database with your Mobile Service, but some apps need to store unstructured binary or typed data. Using scripts, you could easily connect to Windows Azure Blob or Table Storage (as well as many other third party data options). 
 
-For more on scripts and data in Mobile Services, see [this tutorial](http://www.windowsazure.com/en-us/develop/mobile/tutorials/authorize-users-in-scripts-xamarin-ios/). 
+For more on scripts and data in Mobile Services, see [this tutorial](https://www.windowsazure.com/develop/mobile/tutorials/authorize-users-in-scripts-xamarin-ios/?WT.mc_id=friends-0000-jamont). 
 
 #####Bonus Challenge Walkthrough
 
@@ -118,11 +118,11 @@ function sendEmail(item) {
 ###Resources:
 
 * Xamarin.Android Getting Started Content: 
-http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-xamarin-android
-* Xamarin.iOS Getting Started with Push: http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-push-xamarin-ios
-* Xamarin.Android Getting Started with Push: http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-push-xamarin-android
+https://www.windowsazure.com/develop/mobile/tutorials/get-started-xamarin-android?WT.mc_id=friends-0000-jamont
+* Xamarin.iOS Getting Started with Push: https://www.windowsazure.com/develop/mobile/tutorials/get-started-with-push-xamarin-ios?WT.mc_id=friends-0000-jamont
+* Xamarin.Android Getting Started with Push: https://www.windowsazure.com/develop/mobile/tutorials/get-started-with-push-xamarin-android?WT.mc_id=friends-0000-jamont
 * Mobile Dev Center: www.windowsazure.com/mobile
 * Collection of helpful blog posts & tutorials: aka.ms/CommonWAMS
-* Forum: http://social.msdn.microsoft.com/Forums/en-US/azuremobile/threads
+* Forum: https://social.msdn.microsoft.com/Forums/en-US/azuremobile/threads?WT.mc_id=friends-0000-jamont
 * Feature Requests: mobileservices.uservoice.com
 * Feedback: mobileservices (at) microsoft (dot) com
